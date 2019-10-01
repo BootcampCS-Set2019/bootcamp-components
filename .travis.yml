@@ -4,6 +4,6 @@ language: swift
 jobs:
   include:
     - stage: build
-      script: xcodebuild clean build -scheme RecommededCardsModule -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.4,name=iPhone X' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+      script: xcodebuild clean build -scheme Components -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.4,name=iPhone X' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
     - stage: test
-      script: xcodebuild test -scheme RecommededCardsModuleTests -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.4,name=iPhone X' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+      script: xcodebuild test -scheme ComponentsTests -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=12.4,name=iPhone X' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
