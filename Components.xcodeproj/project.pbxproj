@@ -10,7 +10,14 @@
 		BD2F0C742344C4EA00F26D43 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2F0C6A2344C4EA00F26D43 /* Components.framework */; };
 		BD2F0C792344C4EA00F26D43 /* ComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F0C782344C4EA00F26D43 /* ComponentsTests.swift */; };
 		BD2F0C7B2344C4EA00F26D43 /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2F0C6D2344C4EA00F26D43 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD2F0C8C2344C6FD00F26D43 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2F0C8A2344C6EA00F26D43 /* Resources.framework */; };
+		BDB7EA0C23454DAB002FB416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7EA0B23454DAB002FB416 /* AppDelegate.swift */; };
+		BDB7EA0E23454DAB002FB416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7EA0D23454DAB002FB416 /* ViewController.swift */; };
+		BDB7EA1123454DAB002FB416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB7EA0F23454DAB002FB416 /* Main.storyboard */; };
+		BDB7EA1323454DAC002FB416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB7EA1223454DAC002FB416 /* Assets.xcassets */; };
+		BDB7EA1623454DAC002FB416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB7EA1423454DAC002FB416 /* LaunchScreen.storyboard */; };
+		BDB7EA1B23454DB9002FB416 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2F0C6A2344C4EA00F26D43 /* Components.framework */; };
+		BDB7EA1C23454DB9002FB416 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD2F0C6A2344C4EA00F26D43 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BDB7EA272345621F002FB416 /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB7EA262345621F002FB416 /* Resources.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,28 +28,28 @@
 			remoteGlobalIDString = BD2F0C692344C4EA00F26D43;
 			remoteInfo = Components;
 		};
-		BD2F0C892344C6EA00F26D43 /* PBXContainerItemProxy */ = {
+		BDB7EA1D23454DB9002FB416 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BD2F0C852344C6EA00F26D43 /* Resources.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BD2F0C452344C00900F26D43;
-			remoteInfo = Resources;
-		};
-		BDFDC6F923450F6A00DE5F41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDFDC6F423450F6800DE5F41 /* ComponentsSample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BDFDC6D123450F6800DE5F41;
-			remoteInfo = ComponentsSample;
-		};
-		BDFDC6FB23450F6A00DE5F41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BDFDC6F423450F6800DE5F41 /* ComponentsSample.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BDFDC6E523450F6800DE5F41;
-			remoteInfo = ComponentsSampleTests;
+			containerPortal = BD2F0C612344C4EA00F26D43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD2F0C692344C4EA00F26D43;
+			remoteInfo = Components;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BDB7EA1F23454DB9002FB416 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BDB7EA1C23454DB9002FB416 /* Components.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BD2F0C6A2344C4EA00F26D43 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,8 +58,14 @@
 		BD2F0C732344C4EA00F26D43 /* ComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2F0C782344C4EA00F26D43 /* ComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsTests.swift; sourceTree = "<group>"; };
 		BD2F0C7A2344C4EA00F26D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD2F0C852344C6EA00F26D43 /* Resources.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Resources.xcodeproj; path = "bootcamp-resources/Resources.xcodeproj"; sourceTree = "<group>"; };
-		BDFDC6F423450F6800DE5F41 /* ComponentsSample.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ComponentsSample.xcodeproj; path = ComponentsSample/ComponentsSample.xcodeproj; sourceTree = "<group>"; };
+		BDB7EA0923454DAB002FB416 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB7EA0B23454DAB002FB416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDB7EA0D23454DAB002FB416 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDB7EA1023454DAB002FB416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDB7EA1223454DAC002FB416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDB7EA1523454DAC002FB416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDB7EA1723454DAC002FB416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB7EA262345621F002FB416 /* Resources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resources.framework; path = Carthage/Build/iOS/Resources.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD2F0C8C2344C6FD00F26D43 /* Resources.framework in Frameworks */,
+				BDB7EA272345621F002FB416 /* Resources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,16 +85,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDB7EA0623454DAB002FB416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB7EA1B23454DB9002FB416 /* Components.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BD2F0C602344C4EA00F26D43 = {
 			isa = PBXGroup;
 			children = (
-				BDFDC6F423450F6800DE5F41 /* ComponentsSample.xcodeproj */,
-				BD2F0C842344C54400F26D43 /* Submodules */,
 				BD2F0C6C2344C4EA00F26D43 /* Components */,
 				BD2F0C772344C4EA00F26D43 /* ComponentsTests */,
+				BDB7EA0A23454DAB002FB416 /* Sample */,
 				BD2F0C6B2344C4EA00F26D43 /* Products */,
 				BD2F0C8B2344C6FD00F26D43 /* Frameworks */,
 			);
@@ -92,6 +112,7 @@
 			children = (
 				BD2F0C6A2344C4EA00F26D43 /* Components.framework */,
 				BD2F0C732344C4EA00F26D43 /* ComponentsTests.xctest */,
+				BDB7EA0923454DAB002FB416 /* Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,36 +135,25 @@
 			path = ComponentsTests;
 			sourceTree = "<group>";
 		};
-		BD2F0C842344C54400F26D43 /* Submodules */ = {
-			isa = PBXGroup;
-			children = (
-				BD2F0C852344C6EA00F26D43 /* Resources.xcodeproj */,
-			);
-			path = Submodules;
-			sourceTree = "<group>";
-		};
-		BD2F0C862344C6EA00F26D43 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BD2F0C8A2344C6EA00F26D43 /* Resources.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BD2F0C8B2344C6FD00F26D43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDB7EA262345621F002FB416 /* Resources.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BDFDC6F523450F6800DE5F41 /* Products */ = {
+		BDB7EA0A23454DAB002FB416 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				BDFDC6FA23450F6A00DE5F41 /* ComponentsSample.app */,
-				BDFDC6FC23450F6A00DE5F41 /* ComponentsSampleTests.xctest */,
+				BDB7EA0B23454DAB002FB416 /* AppDelegate.swift */,
+				BDB7EA0D23454DAB002FB416 /* ViewController.swift */,
+				BDB7EA0F23454DAB002FB416 /* Main.storyboard */,
+				BDB7EA1223454DAC002FB416 /* Assets.xcassets */,
+				BDB7EA1423454DAC002FB416 /* LaunchScreen.storyboard */,
+				BDB7EA1723454DAC002FB416 /* Info.plist */,
 			);
-			name = Products;
+			path = Sample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +178,8 @@
 				BD2F0C662344C4EA00F26D43 /* Sources */,
 				BD2F0C672344C4EA00F26D43 /* Frameworks */,
 				BD2F0C682344C4EA00F26D43 /* Resources */,
+				BDB7EA24234561C2002FB416 /* ShellScript */,
+				BDB7EA25234561D5002FB416 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -185,6 +197,8 @@
 				BD2F0C6F2344C4EA00F26D43 /* Sources */,
 				BD2F0C702344C4EA00F26D43 /* Frameworks */,
 				BD2F0C712344C4EA00F26D43 /* Resources */,
+				BDB7EA2823456247002FB416 /* ShellScript */,
+				BDB7EA2923456253002FB416 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -195,6 +209,25 @@
 			productName = ComponentsTests;
 			productReference = BD2F0C732344C4EA00F26D43 /* ComponentsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDB7EA0823454DAB002FB416 /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB7EA1823454DAC002FB416 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				BDB7EA0523454DAB002FB416 /* Sources */,
+				BDB7EA0623454DAB002FB416 /* Frameworks */,
+				BDB7EA0723454DAB002FB416 /* Resources */,
+				BDB7EA1F23454DB9002FB416 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDB7EA1E23454DB9002FB416 /* PBXTargetDependency */,
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = BDB7EA0923454DAB002FB416 /* Sample.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,6 +246,9 @@
 					BD2F0C722344C4EA00F26D43 = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					BDB7EA0823454DAB002FB416 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 				};
 			};
 			buildConfigurationList = BD2F0C642344C4EA00F26D43 /* Build configuration list for PBXProject "Components" */;
@@ -221,51 +257,19 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = BD2F0C602344C4EA00F26D43;
 			productRefGroup = BD2F0C6B2344C4EA00F26D43 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BDFDC6F523450F6800DE5F41 /* Products */;
-					ProjectRef = BDFDC6F423450F6800DE5F41 /* ComponentsSample.xcodeproj */;
-				},
-				{
-					ProductGroup = BD2F0C862344C6EA00F26D43 /* Products */;
-					ProjectRef = BD2F0C852344C6EA00F26D43 /* Resources.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BD2F0C692344C4EA00F26D43 /* Components */,
 				BD2F0C722344C4EA00F26D43 /* ComponentsTests */,
+				BDB7EA0823454DAB002FB416 /* Sample */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BD2F0C8A2344C6EA00F26D43 /* Resources.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Resources.framework;
-			remoteRef = BD2F0C892344C6EA00F26D43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BDFDC6FA23450F6A00DE5F41 /* ComponentsSample.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = ComponentsSample.app;
-			remoteRef = BDFDC6F923450F6A00DE5F41 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BDFDC6FC23450F6A00DE5F41 /* ComponentsSampleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ComponentsSampleTests.xctest;
-			remoteRef = BDFDC6FB23450F6A00DE5F41 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BD2F0C682344C4EA00F26D43 /* Resources */ = {
@@ -282,7 +286,92 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDB7EA0723454DAB002FB416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB7EA1623454DAC002FB416 /* LaunchScreen.storyboard in Resources */,
+				BDB7EA1323454DAC002FB416 /* Assets.xcassets in Resources */,
+				BDB7EA1123454DAB002FB416 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDB7EA24234561C2002FB416 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho “warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint”\nfi\n";
+		};
+		BDB7EA25234561D5002FB416 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Resources.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Resources.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		BDB7EA2823456247002FB416 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho “warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint”\nfi\n";
+		};
+		BDB7EA2923456253002FB416 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD2F0C662344C4EA00F26D43 /* Sources */ = {
@@ -300,6 +389,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BDB7EA0523454DAB002FB416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB7EA0E23454DAB002FB416 /* ViewController.swift in Sources */,
+				BDB7EA0C23454DAB002FB416 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -308,7 +406,31 @@
 			target = BD2F0C692344C4EA00F26D43 /* Components */;
 			targetProxy = BD2F0C752344C4EA00F26D43 /* PBXContainerItemProxy */;
 		};
+		BDB7EA1E23454DB9002FB416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD2F0C692344C4EA00F26D43 /* Components */;
+			targetProxy = BDB7EA1D23454DB9002FB416 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDB7EA0F23454DAB002FB416 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB7EA1023454DAB002FB416 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDB7EA1423454DAC002FB416 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB7EA1523454DAC002FB416 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BD2F0C7C2344C4EA00F26D43 /* Debug */ = {
@@ -444,6 +566,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Components/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +597,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Components/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,6 +621,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = ComponentsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,6 +640,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = ComponentsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,6 +648,42 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bootcamp.set2019.ComponentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDB7EA1923454DAC002FB416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVMDCJRNKS;
+				INFOPLIST_FILE = Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.bootcamp.set2019.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDB7EA1A23454DAC002FB416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DVMDCJRNKS;
+				INFOPLIST_FILE = Sample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.bootcamp.set2019.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -548,6 +716,15 @@
 			buildConfigurations = (
 				BD2F0C822344C4EA00F26D43 /* Debug */,
 				BD2F0C832344C4EA00F26D43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB7EA1823454DAC002FB416 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB7EA1923454DAC002FB416 /* Debug */,
+				BDB7EA1A23454DAC002FB416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

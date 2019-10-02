@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ComponentsSample
+//  Sample
 //
 //  Created by matheus.filipe.bispo on 02/10/19.
 //  Copyright © 2019 BootcampCS-Set2019. All rights reserved.

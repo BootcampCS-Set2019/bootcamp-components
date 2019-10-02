@@ -1,4 +1,0 @@
-[submodule "Submodules/bootcamp-resources"]
-	path = Submodules/bootcamp-resources
-	url = https://github.com/BootcampCS-Set2019/bootcamp-resources.git
-	branch = develop
