@@ -11,8 +11,7 @@ import UIKit
 import Resources
 
 extension MagicDesignSystem {
-    final public class Labels {
-
+    public class Labels {
         private init() { }
 
         static let titleLabel: UILabel = setTitleLabel()

@@ -11,7 +11,7 @@ import UIKit
 import Resources
 
 extension MagicDesignSystem {
-    class CardsWithTypeComponent: UIStackView {
+    public class CardsWithTypeComponent: UIStackView {
 
         private let cardsType: UILabel = {
             return MagicDesignSystem.Labels.subtitleLabel
@@ -34,5 +34,19 @@ extension MagicDesignSystem {
         required init(coder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
+    }
+}
+
+extension MagicDesignSystem.CardsWithTypeComponent: ViewCodable {
+    func buildHierarchy() {
+        
+    }
+    
+    func buildConstraints() {
+        
+    }
+    
+    func configureAdditional() {
+        
     }
 }
