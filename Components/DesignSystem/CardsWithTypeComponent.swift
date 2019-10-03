@@ -10,28 +10,29 @@ import Foundation
 import UIKit
 import Resources
 
-class CardCollectionWithType: UIStackView {
+extension MagicDesignSystem {
+    class CardCollectionWithType: UIStackView {
 
-    private let cardsType: UILabel = {
-        return MagicDesignSystem.Labels.subtitleLabel
-    }()
+        private let cardsType: UILabel = {
+            return MagicDesignSystem.Labels.subtitleLabel
+        }()
 
-    private let cardsCollection: UICollectionView = {
-        let collection = UICollectionView()
-        return collection
-    }()
+        private let cardsCollection: UICollectionView = {
+            let collection = UICollectionView()
+            return collection
+        }()
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+        override init(frame: CGRect) {
+            super.init(frame: frame)
 
-        self.axis = .vertical
-        self.distribution = .equalSpacing
-        self.alignment = .leading
-        self.spacing = 30
+            self.axis = .vertical
+            self.distribution = .equalSpacing
+            self.alignment = .leading
+            self.spacing = 30
+        }
+
+        required init(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
     }
-
-    required init(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
 }
