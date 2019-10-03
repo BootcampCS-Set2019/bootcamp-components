@@ -14,8 +14,8 @@ extension MagicDesignSystem {
     public class Labels {
         private init() { }
 
-        static let titleLabel: UILabel = setTitleLabel()
-        static let subtitleLabel: UILabel = setSubtitleLabel()
+        public static let titleLabel: UILabel = setTitleLabel()
+        public static let subtitleLabel: UILabel = setSubtitleLabel()
 
         private static func setTitleLabel() -> UILabel {
             let label: UILabel = UILabel(frame: CGRect.zero)
