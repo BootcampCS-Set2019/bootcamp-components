@@ -7,3 +7,26 @@
 //
 
 import Foundation
+import UIKit
+import Resources
+
+extension MagicDesignSystem {
+    final public class Labels {
+
+        private init() { }
+
+        static let titleLabel: UILabel = setTitleLabel()
+        static let subtitleLabel: UILabel = setSubtitleLabel()
+
+        private static func setTitleLabel() -> UILabel {
+            let label: UILabel = UILabel(frame: CGRect.zero)
+            return label
+        }
+
+        private static func setSubtitleLabel() -> UILabel {
+            let label: UILabel = UILabel(frame: CGRect.zero)
+            return label
+        }
+
+    }
+}

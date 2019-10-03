@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38A35C5A23465E8700EBE438 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A35C5923465E8700EBE438 /* Labels.swift */; };
+		38A35C5C2346674600EBE438 /* CardsWithTypeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A35C5B2346674600EBE438 /* CardsWithTypeComponent.swift */; };
 		BD2F0C742344C4EA00F26D43 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2F0C6A2344C4EA00F26D43 /* Components.framework */; };
 		BD2F0C792344C4EA00F26D43 /* ComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2F0C782344C4EA00F26D43 /* ComponentsTests.swift */; };
 		BD2F0C7B2344C4EA00F26D43 /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = BD2F0C6D2344C4EA00F26D43 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		38A35C5923465E8700EBE438 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		38A35C5B2346674600EBE438 /* CardsWithTypeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsWithTypeComponent.swift; sourceTree = "<group>"; };
 		BD2F0C6A2344C4EA00F26D43 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2F0C6D2344C4EA00F26D43 /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 		BD2F0C6E2344C4EA00F26D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38A35C5823465E7100EBE438 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				38A35C5923465E8700EBE438 /* Labels.swift */,
+				38A35C5B2346674600EBE438 /* CardsWithTypeComponent.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
 		BD2F0C602344C4EA00F26D43 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +133,7 @@
 		BD2F0C6C2344C4EA00F26D43 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				38A35C5823465E7100EBE438 /* DesignSystem */,
 				BD2F0C6D2344C4EA00F26D43 /* Components.h */,
 				BD2F0C6E2344C4EA00F26D43 /* Info.plist */,
 			);
@@ -241,7 +255,7 @@
 				TargetAttributes = {
 					BD2F0C692344C4EA00F26D43 = {
 						CreatedOnToolsVersion = 10.3;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1100;
 					};
 					BD2F0C722344C4EA00F26D43 = {
 						CreatedOnToolsVersion = 10.3;
@@ -378,6 +392,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A35C5A23465E8700EBE438 /* Labels.swift in Sources */,
+				38A35C5C2346674600EBE438 /* CardsWithTypeComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,6 +635,7 @@
 		BD2F0C822344C4EA00F26D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
@@ -638,6 +655,7 @@
 		BD2F0C832344C4EA00F26D43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
@@ -657,6 +675,7 @@
 		BDB7EA1923454DAC002FB416 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
@@ -675,6 +694,7 @@
 		BDB7EA1A23454DAC002FB416 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVMDCJRNKS;
