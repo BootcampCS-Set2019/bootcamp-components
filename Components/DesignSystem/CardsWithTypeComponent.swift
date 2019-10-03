@@ -39,11 +39,20 @@ extension MagicDesignSystem {
 
 extension MagicDesignSystem.CardsWithTypeComponent: ViewCodable {
     func buildHierarchy() {
-        
+        self.addSubview(cardsType)
+        self.addSubview(cardsCollection)
     }
     
     func buildConstraints() {
+        cardsType.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        cardsType.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        cardsType.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        cardsType.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
+        cardsCollection.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        cardsCollection.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        cardsCollection.topAnchor.constraint(equalTo: cardsType.topAnchor, constant: 10).isActive = true
+        cardsCollection.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
     
     func configureAdditional() {
