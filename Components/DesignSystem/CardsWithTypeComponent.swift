@@ -11,7 +11,7 @@ import UIKit
 import Resources
 
 extension MagicDesignSystem {
-    class CardCollectionWithType: UIStackView {
+    class CardsWithTypeComponent: UIStackView {
 
         private let cardsType: UILabel = {
             return MagicDesignSystem.Labels.subtitleLabel
