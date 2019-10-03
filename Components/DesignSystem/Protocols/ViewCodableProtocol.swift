@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ViewCodable {
+public protocol ViewCodable {
     func buildHierarchy()
     func buildConstraints()
     func configureAdditional()
@@ -16,7 +16,7 @@ protocol ViewCodable {
 }
 
 extension ViewCodable {
-    func setupView() {
+    public func setupView() {
         buildHierarchy()
         buildConstraints()
         configureAdditional()
