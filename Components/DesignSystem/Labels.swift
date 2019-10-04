@@ -33,7 +33,7 @@ extension MagicDesignSystem {
 
         private func setSubtitleLabel(frame: CGRect) -> UILabel {
             let label: UILabel = UILabel(frame: frame)
-            label.textColor = MagicDesignSystem.Colors.grayLabel
+            label.textColor = MagicDesignSystem.Colors.grayText
             label.font = MagicDesignSystem.Font.systemBold.of(size: 16)
             return label
         }
