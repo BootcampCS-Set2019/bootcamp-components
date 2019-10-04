@@ -11,21 +11,31 @@ import UIKit
 import Resources
 
 extension MagicDesignSystem {
-    public class Labels {
-        private init() { }
+    public enum Labels {
+        case titleLabel
+        case subtitleLabel
 
-        static let titleLabel: UILabel = setTitleLabel()
-        static let subtitleLabel: UILabel = setSubtitleLabel()
+        public func uiLabel(frame: CGRect) -> UILabel {
+            switch self {
+            case .titleLabel:
+                return setTitleLabel(frame: frame)
+            case .subtitleLabel:
+                return setSubtitleLabel(frame: frame)
+            }
+        }
 
-        private static func setTitleLabel() -> UILabel {
-            let label: UILabel = UILabel(frame: CGRect.zero)
+        private func setTitleLabel(frame: CGRect) -> UILabel {
+            let label: UILabel = UILabel(frame: frame)
+            label.textColor = MagicDesignSystem.Colors.whiteText
+            label.font = MagicDesignSystem.Font.systemBold.of(size: 24)
             return label
         }
 
-        private static func setSubtitleLabel() -> UILabel {
-            let label: UILabel = UILabel(frame: CGRect.zero)
+        private func setSubtitleLabel(frame: CGRect) -> UILabel {
+            let label: UILabel = UILabel(frame: frame)
+            label.textColor = MagicDesignSystem.Colors.grayText
+            label.font = MagicDesignSystem.Font.systemBold.of(size: 16)
             return label
         }
-
     }
 }
