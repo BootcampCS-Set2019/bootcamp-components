@@ -22,7 +22,9 @@ class ViewController: UIViewController {
             placeholder: "Search for cards")
         self.view.addSubview(searchBar)
         searchBar.delegate = self
-        print()
+
+        let button = MagicDesignSystem.Buttons.bottomHorizontalLarge.uiButton(text: "Add Card")
+        self.view.addSubview(button)
     }
 
 }

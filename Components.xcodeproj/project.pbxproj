@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38A35C5A23465E8700EBE438 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A35C5923465E8700EBE438 /* Labels.swift */; };
+		38A76F46234D2B03008B6143 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A76F45234D2B03008B6143 /* Buttons.swift */; };
 		38B9C41523468E5A00F556D0 /* ViewCodableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B9C41423468E5A00F556D0 /* ViewCodableProtocol.swift */; };
 		38B9C445234CCDF100F556D0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B9C444234CCDF100F556D0 /* SearchBar.swift */; };
 		BD2F0C742344C4EA00F26D43 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2F0C6A2344C4EA00F26D43 /* Components.framework */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		38A35C5923465E8700EBE438 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		38A76F45234D2B03008B6143 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		38B9C41423468E5A00F556D0 /* ViewCodableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodableProtocol.swift; sourceTree = "<group>"; };
 		38B9C444234CCDF100F556D0 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		BD2F0C6A2344C4EA00F26D43 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +110,7 @@
 				38B9C41323468E2000F556D0 /* Protocols */,
 				38A35C5923465E8700EBE438 /* Labels.swift */,
 				38B9C444234CCDF100F556D0 /* SearchBar.swift */,
+				38A76F45234D2B03008B6143 /* Buttons.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				38B9C41523468E5A00F556D0 /* ViewCodableProtocol.swift in Sources */,
 				38A35C5A23465E8700EBE438 /* Labels.swift in Sources */,
 				38B9C445234CCDF100F556D0 /* SearchBar.swift in Sources */,
+				38A76F46234D2B03008B6143 /* Buttons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
