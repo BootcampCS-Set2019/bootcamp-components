@@ -48,5 +48,12 @@ class ComponentsTests: QuickSpec {
                 expect(component).to(haveValidSnapshot())
             }
         }
+
+        describe("TabBar") {
+            it("has to match snapshot") {
+                let component: UITabBar = MagicDesignSystem.TabBar.normal.uiTabBar(tabs: ["Sets", "Favorites"])
+                expect(component).to(haveValidSnapshot())
+            }
+        }
     }
 }
