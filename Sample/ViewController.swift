@@ -22,10 +22,12 @@ class ViewController: UIViewController {
         self.view.addSubview(searchBar)
         searchBar.delegate = self
 
-        let button = MagicDesignSystem.Buttons.bottomHorizontalLarge.uiButton(text: "Add Card")
-        self.view.addSubview(button)
-    }
+//        let button = MagicDesignSystem.Buttons.bottomHorizontalLarge.uiButton(text: "Add Card")
+//        self.view.addSubview(button)
 
+        let tabBar = MagicDesignSystem.TabBar.normal.uiTabBar(tabs: ["Sets"])
+        self.view.addSubview(tabBar)
+    }
 }
 
 extension ViewController: UISearchBarDelegate {
