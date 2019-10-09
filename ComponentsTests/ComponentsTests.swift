@@ -9,15 +9,16 @@
 import Quick
 import Nimble
 import Resources
+import Nimble_Snapshots
 @testable import Components
 
 class ComponentsTests: QuickSpec {
     override func spec() {
         describe("SearchBar") {
             it("has to match snapshot") {
-                let component: UISearchBar = MagicDesignSystem.SearchBar.searchCards
+                let component: UISearchBar = MagicDesignSystem.SearchBar.searchCardsHorizontalLarge
                     .uiSearchBar(placeholder: "Search for cards")
-                //expect(component).to(recordSnapshot())
+                expect(component).to(haveValidSnapshot())
             }
         }
 
@@ -27,7 +28,7 @@ class ComponentsTests: QuickSpec {
                     let component: UILabel = MagicDesignSystem.Labels.titleLabel
                         .uiLabel(frame: CGRect(origin: .zero, size: CGSize(width: 200, height: 50)))
                     component.text = "Deck name"
-                    //expect(component).to(recordSnapshot())
+                    expect(component).to(haveValidSnapshot())
                 }
             }
             describe("SubtitleLabel") {
@@ -35,7 +36,7 @@ class ComponentsTests: QuickSpec {
                     let component: UILabel = MagicDesignSystem.Labels.subtitleLabel
                         .uiLabel(frame: CGRect(origin: .zero, size: CGSize(width: 200, height: 50)))
                     component.text = "Type name"
-                    //expect(component).to(recordSnapshot())
+                    expect(component).to(haveValidSnapshot())
                 }
             }
         }
@@ -44,7 +45,7 @@ class ComponentsTests: QuickSpec {
             it("has to match snapshot") {
                 let component: UIButton = MagicDesignSystem.Buttons.bottomHorizontalLarge
                     .uiButton(text: "Add card")
-                //expect(component).to(recordSnapshot())
+                expect(component).to(haveValidSnapshot())
             }
         }
     }

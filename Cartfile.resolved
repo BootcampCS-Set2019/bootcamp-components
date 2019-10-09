@@ -1,3 +1,5 @@
 github "BootcampCS-Set2019/bootcamp-resources" "1b3ccf7ae42b61e15dbf60ff9d57c91c0d6750d9"
 github "Quick/Nimble" "v8.0.4"
 github "Quick/Quick" "v2.2.0"
+github "ashfurrow/Nimble-Snapshots" "8.0.0"
+github "uber/ios-snapshot-test-case" "6.0.0"
