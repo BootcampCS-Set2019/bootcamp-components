@@ -17,9 +17,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.view.backgroundColor = .black
 
-        let searchBar = MagicDesignSystem.SearchBar.searchCards.uiSearchBar(
-            frame: CGRect(x: 0, y: 100, width: self.view.frame.width, height: 40),
-            placeholder: "Search for cards")
+        let searchBar = MagicDesignSystem.SearchBar.searchCardsHorizontalLarge
+            .uiSearchBar(placeholder: "Search for cards")
         self.view.addSubview(searchBar)
         searchBar.delegate = self
 
