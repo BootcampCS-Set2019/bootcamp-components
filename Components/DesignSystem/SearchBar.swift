@@ -12,14 +12,25 @@ import Resources
 
 extension MagicDesignSystem {
     public enum SearchBar {
-        case searchCards
+        case searchCardsHorizontalLarge
 
-        public func uiSearchBar(frame: CGRect, placeholder: String? = nil) -> UISearchBar {
-            return setSearchCards(frame: frame, placeholder: placeholder)
+        public func uiSearchBar(horizontalOffset: CGFloat = 30,
+                                verticalOffset: CGFloat = 50,
+                                placeholder: String? = nil) -> UISearchBar {
+            return setSearchCardsHorizontalLarge(horizontalOffset: horizontalOffset,
+                                                 verticalOffset: verticalOffset,
+                                                 placeholder: placeholder)
         }
 
-        private func setSearchCards(frame: CGRect, placeholder: String?) -> UISearchBar {
-            let searchBar: UISearchBar = UISearchBar(frame: frame)
+        private func setSearchCardsHorizontalLarge(horizontalOffset: CGFloat,
+                                                   verticalOffset: CGFloat,
+                                                   placeholder: String?) -> UISearchBar {
+            let screenSize = UIScreen.main.bounds.size
+            let height = CGFloat(45)
+            let searchBar: UISearchBar = UISearchBar(frame: CGRect(x: horizontalOffset / 2,
+                                                                   y: verticalOffset,
+                                                                   width: screenSize.width - horizontalOffset,
+                                                                   height: height))
             searchBar.backgroundColor = MagicDesignSystem.Colors.clear
             searchBar.tintColor = MagicDesignSystem.Colors.whiteText
             searchBar.isTranslucent = true
@@ -35,7 +46,7 @@ extension MagicDesignSystem {
                 textField.backgroundColor = MagicDesignSystem.Colors.clear
                 textField.layer.borderColor = UIColor.white.cgColor
                 textField.layer.borderWidth = 1
-                textField.layer.cornerRadius = 10
+                textField.layer.cornerRadius = 5
                 if let placeholderString = placeholder {
                     textField.attributedPlaceholder = createMutableAttributedString(placeholderString)
                 }

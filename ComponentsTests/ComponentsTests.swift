@@ -6,29 +6,46 @@
 //  Copyright © 2019 BootcampCS-Set2019. All rights reserved.
 //
 
-import XCTest
+import Quick
+import Nimble
+import Resources
 @testable import Components
 
-class ComponentsTests: XCTestCase {
+class ComponentsTests: QuickSpec {
+    override func spec() {
+        describe("SearchBar") {
+            it("has to match snapshot") {
+                let component: UISearchBar = MagicDesignSystem.SearchBar.searchCards
+                    .uiSearchBar(placeholder: "Search for cards")
+                //expect(component).to(recordSnapshot())
+            }
+        }
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+        describe("Labels") {
+            describe("TitleLabel") {
+                it("has to match snapshot") {
+                    let component: UILabel = MagicDesignSystem.Labels.titleLabel
+                        .uiLabel(frame: CGRect(origin: .zero, size: CGSize(width: 200, height: 50)))
+                    component.text = "Deck name"
+                    //expect(component).to(recordSnapshot())
+                }
+            }
+            describe("SubtitleLabel") {
+                it("has to match snapshot") {
+                    let component: UILabel = MagicDesignSystem.Labels.subtitleLabel
+                        .uiLabel(frame: CGRect(origin: .zero, size: CGSize(width: 200, height: 50)))
+                    component.text = "Type name"
+                    //expect(component).to(recordSnapshot())
+                }
+            }
+        }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        describe("Buttons") {
+            it("has to match snapshot") {
+                let component: UIButton = MagicDesignSystem.Buttons.bottomHorizontalLarge
+                    .uiButton(text: "Add card")
+                //expect(component).to(recordSnapshot())
+            }
         }
     }
-
 }
