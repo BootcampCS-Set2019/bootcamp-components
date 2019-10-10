@@ -55,5 +55,20 @@ class ComponentsTests: QuickSpec {
                 expect(component).to(haveValidSnapshot())
             }
         }
+
+        describe("LoadingView") {
+            it("has to match snapshot") {
+                let component: UIActivityIndicatorView = MagicDesignSystem.Loading.activityIndicator
+                component.startAnimating()
+                expect(component).to(haveValidSnapshot())
+            }
+        }
+
+        describe("ErrorStateView") {
+            it("has to match snapshot") {
+                let component: UIView = MagicDesignSystem.ErrorState(message: "Erro", buttonText: "Reload").errorView
+                expect(component).to(haveValidSnapshot())
+            }
+        }
     }
 }

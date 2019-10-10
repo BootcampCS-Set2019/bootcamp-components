@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 
         let tabBar = MagicDesignSystem.TabBar.normal.uiTabBar(tabs: ["Sets"])
         self.view.addSubview(tabBar)
-    
+
 //        let loading = MagicDesignSystem.Loading.activityIndicator
 //        self.view.addSubview(loading)
 //        loading.startAnimating()
