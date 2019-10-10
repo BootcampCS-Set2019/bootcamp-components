@@ -13,7 +13,7 @@ import Resources
 extension MagicDesignSystem {
     public enum TabBar {
         case normal
-        
+
         public func uiTabBar(tabs: [String]) -> UITabBar {
             return setTabBar(tabs: tabs)
         }
@@ -62,7 +62,7 @@ extension MagicDesignSystem {
 
             return tabBar
         }
-        
+
         private func createLines(rect: CGRect) -> UIView {
             let view = UIView(frame: rect)
             view.backgroundColor = .white
