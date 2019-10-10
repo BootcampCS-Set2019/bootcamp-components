@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38066F48234F728E007E55E7 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38066F47234F728E007E55E7 /* Loading.swift */; };
+		387B31AA234F9704001924F0 /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387B31A9234F9704001924F0 /* ErrorState.swift */; };
 		38A35C5A23465E8700EBE438 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A35C5923465E8700EBE438 /* Labels.swift */; };
 		38A76F46234D2B03008B6143 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A76F45234D2B03008B6143 /* Buttons.swift */; };
 		38A76F48234E2D25008B6143 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A76F47234E2D25008B6143 /* TabBar.swift */; };
@@ -57,6 +59,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		38066F47234F728E007E55E7 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		387B31A9234F9704001924F0 /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
 		38A35C5923465E8700EBE438 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		38A76F45234D2B03008B6143 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		38A76F47234E2D25008B6143 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -106,9 +110,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38066F46234F7252007E55E7 /* ScreenStates */ = {
+			isa = PBXGroup;
+			children = (
+				38066F47234F728E007E55E7 /* Loading.swift */,
+				387B31A9234F9704001924F0 /* ErrorState.swift */,
+			);
+			path = ScreenStates;
+			sourceTree = "<group>";
+		};
 		38A35C5823465E7100EBE438 /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				38066F46234F7252007E55E7 /* ScreenStates */,
 				38B9C41323468E2000F556D0 /* Protocols */,
 				38A35C5923465E8700EBE438 /* Labels.swift */,
 				38B9C444234CCDF100F556D0 /* SearchBar.swift */,
@@ -415,7 +429,9 @@
 				38A35C5A23465E8700EBE438 /* Labels.swift in Sources */,
 				38B9C445234CCDF100F556D0 /* SearchBar.swift in Sources */,
 				38A76F46234D2B03008B6143 /* Buttons.swift in Sources */,
+				38066F48234F728E007E55E7 /* Loading.swift in Sources */,
 				38A76F48234E2D25008B6143 /* TabBar.swift in Sources */,
+				387B31AA234F9704001924F0 /* ErrorState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

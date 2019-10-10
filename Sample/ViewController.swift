@@ -27,6 +27,13 @@ class ViewController: UIViewController {
 
         let tabBar = MagicDesignSystem.TabBar.normal.uiTabBar(tabs: ["Sets"])
         self.view.addSubview(tabBar)
+
+//        let loading = MagicDesignSystem.Loading.activityIndicator
+//        self.view.addSubview(loading)
+//        loading.startAnimating()
+
+        let error = MagicDesignSystem.ErrorState(message: "Deu ruim", buttonText: "Recarregar").errorView
+        self.view.addSubview(error)
     }
 }
 
