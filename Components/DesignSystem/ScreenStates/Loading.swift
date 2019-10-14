@@ -10,8 +10,10 @@ import Foundation
 import Resources
 
 extension MagicDesignSystem {
-    public struct Loading {
-        public static let activityIndicator: UIActivityIndicatorView = {
+    public enum Loading {
+        case activityIndicator
+        
+        public func uiActiviteIndicator() -> UIActivityIndicatorView {
             let screenSize = UIScreen.main.bounds.size
             let size: CGFloat = 50
             let loading = UIActivityIndicatorView(frame:
@@ -21,6 +23,6 @@ extension MagicDesignSystem {
                        height: size))
             loading.style = UIActivityIndicatorView.Style.whiteLarge
             return loading
-        }()
+        }
     }
 }
